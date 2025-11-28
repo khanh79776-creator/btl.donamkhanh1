@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VPStore – Thiết bị văn phòng trực tuyến</title>
+
+<style>
+:root{--primary:#0058B4;--accent:#FFB300;--bg:#F5F8FF;}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,Arial,sans-serif}
+body{background:#fff;color:#222;line-height:1.6}
+header{background:var(--primary);padding:15px 0;position:sticky;top:0;z-index:100}
+.container{max-width:1200px;margin:auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;}
+nav a.logo{font-size:26px;color:#fff;text-decoration:none;font-weight:700}
+nav ul{display:flex;gap:22px;list-style:none}
+nav ul a{color:#fff;text-decoration:none;font-weight:500}
+nav ul a:hover{color:var(--accent)}
+
+.hero{
+  padding:100px 20px;text-align:center;color:white;
+  background:url('https://images.unsplash.com/photo-1527443224154-c4a3942d3efe?auto=format&fit=crop&w=1500&q=80') center/cover;
+}
+.hero h1{font-size:42px;font-weight:700;text-shadow:0 0 7px black}
+.hero .btn{background:var(--accent);padding:14px 30px;border-radius:8px;color:#000;font-weight:600;text-decoration:none;margin-top:25px;display:inline-block}
+
+.search-container{text-align:center;margin:45px 0}
+.search-container input{width:75%;padding:15px;border-radius:40px;font-size:17px;border:1px solid #aaa}
+
+.section{padding:60px 20px}
+.section h2{text-align:center;margin-bottom:35px;font-size:30px;color:var(--primary)}
+
+.grid{display:grid;gap:26px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 14px rgba(0,0,0,.08);transition:.25s}
+.card:hover{transform:translateY(-7px)}
+.card img{width:100%;height:200px;object-fit:cover}
+.card-content{padding:18px}
+.card .price{color:var(--primary);font-weight:700;font-size:18px;margin:6px 0}
+
+.promo{background:var(--bg);padding:45px;text-align:center;font-size:22px; border-left:8px solid var(--accent)}
+
+.support{background:#fff;border-radius:12px;padding:30px;max-width:700px;margin:auto;box-shadow:0 3px 14px rgba(0,0,0,.08)}
+.support input,.support textarea{width:100%;padding:13px;margin:10px 0;border:1px solid #ccc;border-radius:6px}
+.support button{background:var(--primary);color:#fff;padding:13px 30px;border:none;border-radius:6px;cursor:pointer;font-size:17px}
+.support button:hover{background:#003f85}
+
+footer{background:#111;color:#fff;padding:28px;text-align:center;margin-top:60px}
+@media(max-width:768px){
+  .hero h1{font-size:30px}
+  .search-container input{width:92%}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="container">
+    <a href="#" class="logo">VPStore</a>
+    <ul>
+      <li><a href="#category">Danh mục</a></li>
+      <li><a href="#products">Sản phẩm</a></li>
+      <li><a href="#support">Hỗ trợ</a></li>
+      <li><a href="#contact">Liên hệ</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Thiết bị văn phòng – Chính hãng – Giá tốt – Giao nhanh toàn quốc</h1>
+  <a href="#products" class="btn">Mua ngay</a>
+</section>
+
+<div class="search-container">
+  <input type="text" placeholder="Tìm kiếm sản phẩm... Ví dụ: Máy in, bàn ghế, máy scan...">
+</div>
+
+<section class="section" id="category">
+  <h2>Danh mục nổi bật</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="5.jpg">
+      <div class="card-content"><h3>Máy in</h3></div>
+    </div>
+
+    <div class="card">
+      <img src="2.jpg">
+      <div class="card-content"><h3>Bàn & Ghế văn phòng</h3></div>
+    </div>
+
+    <div class="card">
+      <img src="6.webp">
+      <div class="card-content"><h3>Máy scan</h3></div>
+    </div>
+
+    <div class="card">
+      <img src="4.jpg">
+      <div class="card-content"><h3>Thiết bị mạng</h3></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="products">
+  <h2>Sản phẩm bán chạy</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="7.webp">
+      <div class="card-content">
+        <h3>Máy in Laser Pro A4</h3>
+        <p class="price">4,500,000 ₫</p>
+        ⭐ 4.7 – Bảo hành 18 tháng
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="2.jpg">
+      <div class="card-content">
+        <h3>Bàn văn phòng Comfort</h3>
+        <p class="price">1,650,000 ₫</p>
+        ⭐ 4.6 – Hỗ trợ lắp đặt
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="12.webp">
+      <div class="card-content">
+        <h3>Máy Scan FastScan 200</h3>
+        <p class="price">3,200,000 ₫</p>
+        ⭐ 4.8 – Tốc độ cao
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="promo">
+    ⚡ SIÊU KHUYẾN MÃI: Giảm 20% máy in – Miễn phí giao hàng toàn quốc từ 24/11 đến 30/11!
+  </div>
+</section>
+
+<section class="section" id="support">
+  <h2>Hỗ trợ kỹ thuật – 24/7</h2>
+  <div class="support">
+    <form onsubmit="alert('Chúng tôi đã nhận yêu cầu hỗ trợ của bạn!'); return false;">
+      <input placeholder="Tên của bạn">
+      <input placeholder="Email">
+      <textarea rows="4" placeholder="Vấn đề bạn gặp phải..."></textarea>
+      <button>Gửi yêu cầu hỗ trợ</button>
+    </form>
+  </div>
+</section>
+
+<footer id="contact">
+  © 2025 VPStore – Hotline: 0123 456 789 – Email: dnkdzvcl@gmail.com
+</footer>
+
+</body>
+</html>
+
+
